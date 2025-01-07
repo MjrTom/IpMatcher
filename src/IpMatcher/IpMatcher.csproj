@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net462;net48;net6.0;net8.0</TargetFrameworks>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>1.0.5</Version>
+		<Authors>Joel Christner</Authors>
+		<Description>Library for maintaining a match list of IP addresses and networks and comparing inputs to see if a match exists.</Description>
+		<Copyright>(c)2025 Joel Christner</Copyright>
+		<PackageProjectUrl>https://github.com/jchristn/ipmatcher</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/jchristn/ipmatcher</RepositoryUrl>
+		<RepositoryType>Github</RepositoryType>
+		<PackageLicenseUrl></PackageLicenseUrl>
+		<PackageReleaseNotes>Retarget</PackageReleaseNotes>
+		<PackageTags>ip address match netmask network mask subnet cidr</PackageTags>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<DocumentationFile>IpMatcher.xml</DocumentationFile>
+		<ApplicationIcon>icon.ico</ApplicationIcon>
+		<Title>IpMatcher</Title>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="icon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\assets\icon.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\LICENSE.md">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
